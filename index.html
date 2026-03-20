@@ -1,69 +1,194 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-<title>My Portfolio</title>
+
+<title>Soham Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
+    <div id="particles-js"></div>
+
 <nav>
-<h2>My Portfolio</h2>
+
+<h2>Soham</h2>
 
 <ul>
-<li>Home</li>
-<li>About</li>
-<li>Projects</li>
-<li>Contact</li>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
 </ul>
 
 </nav>
 
-<section class="hero">
+<section id="home" class="hero">
 
-<h1>Hello, I'm Soham</h1>
+<img src="profile.jpg" class="profile">
 
-<p>IT Student | Web Developer</p>
+<h1>Hello I'm Soham</h1>
+
+<p>I am <span id="typing"></span></p>
 
 <button>Contact Me</button>
 
+<a href="resume.pdf" download>
+
+<button>Download Resume</button>
+
+</a>
+
 </section>
 
-<section class="about">
+<section id="about">
 
 <h2>About Me</h2>
 
-<p>I am an IT student learning web development.</p>
+<p>
+I am an IT student learning HTML, CSS and JavaScript.
+I am passionate about web development and building websites.
+</p>
 
 </section>
 
-<section class="projects">
+<section id="skills">
 
-<h2>Projects</h2>
+<h2>Skills</h2>
 
-<div class="card">
-<h3>Project 1</h3>
-<p>Portfolio website</p>
+<div class="skill">
+
+<p>HTML</p>
+
+<div class="bar">
+
+<div class="html"></div>
+
 </div>
 
-<div class="card">
-<h3>Project 2</h3>
-<p>College project</p>
+</div>
+
+<div class="skill">
+
+<p>CSS</p>
+
+<div class="bar">
+
+<div class="css"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>JavaScript</p>
+
+<div class="bar">
+
+<div class="js"></div>
+
+</div>
+
 </div>
 
 </section>
 
-<section class="contact">
+<div class="projects-grid">
+
+<div class="project">
+
+<img src="project1.png">
+
+<h3>Portfolio Website</h3>
+
+<p>HTML CSS project</p>
+
+</div>
+
+<div class="project">
+
+<img src="project2.png">
+
+<h3>Landing Page</h3>
+
+<p>Responsive design</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
 
 <h2>Contact</h2>
 
-<p>Email : example@gmail.com</p>
+<p>
+<i class="fa-solid fa-envelope"></i>
+soham@email.com
+</p>
+
+<p>
+<a href="https://github.com/SohamPatil-07" target="_blank">
+
+<i class="fa-brands fa-github"></i>
+
+github.com/SohamPatil-07
+
+</a>
+</p>
+
+<p>
+<a href="www.linkedin.com/in/soham-dhote-28a5102a3" target="_blank">
+
+<i class="fa-brands fa-github"></i>
+
+linkedin.com/in/Soham_Dhote
+
+</a>
+</p>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button>Send</button>
+
+</form>
 
 </section>
 
+<footer>
+
+<p>© Soham Portfolio</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script src="script.js"></script>
+
 </body>
+
 
 </html>

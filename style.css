@@ -1,12 +1,14 @@
 body{
 
-font-family: Arial;
-
 margin:0;
+
+font-family:Arial;
 
 background:#0f172a;
 
 color:white;
+
+scroll-behavior:smooth;
 
 }
 
@@ -20,6 +22,10 @@ background:#020617;
 
 padding:15px;
 
+position:sticky;
+
+top:0;
+
 }
 
 ul{
@@ -32,11 +38,111 @@ list-style:none;
 
 }
 
+a{
+
+color:white;
+
+text-decoration:none;
+
+}
+
 .hero{
 
 text-align:center;
 
-padding:100px;
+padding:80px;
+
+}
+
+.profile{
+
+width:150px;
+
+border-radius:50%;
+
+margin-bottom:20px;
+
+}
+
+section{
+
+padding:50px;
+
+text-align:center;
+
+}
+
+.bar{
+
+background:#1e293b;
+
+height:10px;
+
+border-radius:10px;
+
+}
+
+.bar div{
+
+height:10px;
+
+background:#38bdf8;
+
+border-radius:10px;
+
+}
+
+.html{
+
+width:80%;
+
+}
+
+.css{
+
+width:70%;
+
+}
+
+.js{
+
+width:50%;
+
+}
+
+.project{
+
+background:#020617;
+
+padding:20px;
+
+border-radius:10px;
+
+width:250px;
+
+margin:auto;
+
+}
+
+.project img{
+
+width:100%;
+
+border-radius:10px;
+
+}
+
+input,textarea{
+
+width:250px;
+
+padding:10px;
+
+margin:10px;
+
+border:none;
+
+border-radius:5px;
 
 }
 
@@ -50,22 +156,142 @@ padding:10px;
 
 border-radius:5px;
 
+cursor:pointer;
+
 }
 
-.projects{
+button:hover{
+
+background:#0ea5e9;
+
+}
+
+footer{
+
+background:black;
+
+padding:20px;
+
+margin-top:40px;
+
+}
+
+@media(max-width:768px){
+
+ul{
+
+flex-direction:column;
+
+}
+
+.hero{
 
 padding:40px;
 
 }
 
-.card{
+}
 
-background:#020617;
+.project:hover{
+
+transform:scale(1.05);
+
+transition:.3s;
+
+}
+
+a:hover{
+
+color:#38bdf8;
+
+}
+
+.projects-grid{
+
+display:flex;
+
+gap:30px;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+#contact p{
+
+margin:8px;
+
+}
+
+i{
+
+color:#38bdf8;
+
+margin-right:8px;
+
+}
+
+#contact a{
+
+color:white;
+
+text-decoration:none;
+
+}
+
+#contact a:hover{
+
+color:#38bdf8;
+
+}
+
+.bar div{
+
+height:10px;
+
+background:#38bdf8;
+
+border-radius:10px;
+
+animation:fill 2s;
+
+}
+
+@keyframes fill{
+
+from{
+
+width:0;
+
+}
+
+}
+.project{
+
+background:rgba(255,255,255,0.05);
+
+backdrop-filter:blur(10px);
+
+border:1px solid rgba(255,255,255,0.1);
 
 padding:20px;
 
-margin:10px;
+border-radius:15px;
 
-border-radius:10px;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+
+width:250px;
+
+}
+#particles-js{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+z-index:-1;
 
 }
